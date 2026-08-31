@@ -1,10 +1,8 @@
-# CLAUDE.md
+# AI Risk Assurance — FAIRA × Microsoft
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Unified AI Risk Assurance Framework synthesising Queensland Government FAIRA (v1.0.0) with Microsoft AI Security Risk Assessment (v4.1.4). Provides practical guidance for public sector AI deployments with machine-readable schemas.
 
-## Repository Purpose
-
-The Unified AI Risk Assurance Framework synthesises the Queensland Government FAIRA Framework (v1.0.0) with the Microsoft AI Security Risk Assessment (v4.1.4). It provides practical guidance for public sector teams deploying AI solutions securely and ethically, with machine-readable schemas for automation.
+> **Precedence**: Inherits global (`~/.claude/CLAUDE.md`) and workspace (`~/Documents/GitHub/CLAUDE.md`). This file owns only repo-specific concerns.
 
 **Integrated frameworks:** FAIRA, Microsoft AI Security, NIST AI Security Competency Area (NF-COM-002), VAISS v1.0/v2.0, NFAAIG 2024-2025, Australian Responsible AI Index 2025, AI6 Framework 2025, EU AI Act 2024, NIST AI RMF GenAI Profile, MAS AI Guidelines 2025, OECD AI Principles 2024, UK DSIT AI Framework.
 
@@ -13,7 +11,6 @@ The Unified AI Risk Assurance Framework synthesises the Queensland Government FA
 ### Python Tools (from `tools/` directory)
 
 ```bash
-# Install dependencies
 pip install -r requirements.txt
 
 # Validate a single file (auto-detects schema type)
@@ -104,9 +101,8 @@ Schema validators auto-detect type based on JSON structure:
 
 REST API spec (OpenAPI 3.0) for building automated CI/CD risk checks, multi-project dashboards, vendor assessment, and continuous monitoring.
 
-## Standards
+## Repo-specific gotchas
 
-- **Language**: Use Australian English (organisation, behaviour, colour)
 - **ID Patterns**: `RISK-0001`, `CTRL-0001` (4 digits, zero-padded)
 - **Risk Scoring**: Severity (1-5) × Likelihood (1-5) = Risk Score
 - **NIST Competencies**: Format as `AI-K-###` (knowledge) or `AI-S-###` (skills)
